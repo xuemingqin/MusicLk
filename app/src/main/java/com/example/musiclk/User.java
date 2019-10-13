@@ -1,4 +1,4 @@
-package com.example.musiclk.model;
+package com.example.musiclk;
 
 public class User {
     String name;
