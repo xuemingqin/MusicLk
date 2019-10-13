@@ -1,4 +1,4 @@
-package com.example.musiclk.Util;
+package com.example.musiclk.util;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
