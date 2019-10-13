@@ -1,12 +1,9 @@
-package com.example.musiclk;
+package com.example.musiclk.activity;
 
 import android.app.Activity;
-import android.content.ContentValues;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Editable;
 import android.text.TextUtils;
-import android.text.TextWatcher;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
@@ -19,12 +16,11 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.musiclk.R;
+import com.example.musiclk.Util.MD5Utils;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -94,7 +90,7 @@ public class RegisterActivty extends AppCompatActivity implements View.OnClickLi
             case R.id.btn_fioating:
                 break;
             case R.id.webline:
-                Intent intent =new Intent(this,WebViewActivity.class);
+                Intent intent =new Intent(this, WebViewActivity.class);
                 intent.putExtra("url","https://m.moretickets.com/topic/yinyuejie/");
                 startActivity(intent);
                 break;
